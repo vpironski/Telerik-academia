@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Pictures</h1>
+        <img src="pictures/pic1.jpg" width="300" height="300"> 
+        <div>
+            <button onclick="changePicture()">Change picture</button>
+            <button onclick="enlargeSize()">Enlarge size picture</button>
+            <button onclick="reduceSize()">Reduce size picture</button>
+            <button onclick="randomSize()">Reduce size picture</button>
+        </div>
+
+        <script>
+            //console.log(Math.floor(4.9));
+            //console.log(Math.ceil(4.1));
+            let image = document.getElementsByTagName("img")[0];
+            function changePicture(){
+                let image = document.getElementsByTagName("img")[0];
+                //console.log(image);
+                //console.dir(image);
+                //console.log(image.src);
+            
+                let number = Math.random() * 5;
+                let roundedNumber = Math.ceil(number);
+                console.log(roundedNumber);
+                let pathPicture = image.src;
+                //console.log(pathPicture);
+                let pathPicture = "pictures/pic" + roundedNumber + ".jpg";
+                image.src = pathPicture;
+            }
+
+            function randomSize(){
+                image.width = Math.random() * 500;
+                image.height = Math.random() * 500
+            }
+
+            function enlargeSize(){
+                image.width = 600;
+                image.height = 600;
+            }
+
+            function reduceSize(){
+                image.width = 300;
+                image.height = 300;
+            }
+        </script>
+    </body>
+</html>

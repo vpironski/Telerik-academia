@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+    <body>
+        <h1>Some title</h1>
+        <p style="border: 1px solid red">Samo text</p>
+        <p style="color: blue">Samo text 2</p>
+        <p style="font-family: Arial, Helvetica, sans-serif;">Samo text 3</p>
+        <p style="color: rgb(189, 157, 157)" id="text4" >Samo text 4</p>
+        <button onclick="change()">Change</button>
+
+        <script>   
+            function change(){
+                //console.log(document.getElementById("text4"))
+                let lastParagrah = document.getElementsByTagName("p")[3];
+                //console.log(lastParagrah);
+                //console.dir(lastParagrah);
+                lastParagrah.style.color = "red";
+            }
+        </script>
+    </body>
+</html>

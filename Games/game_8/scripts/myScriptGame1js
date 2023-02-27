@@ -1,0 +1,17 @@
+//console.dir(document);
+//console.log(document.getElementById("Game"));
+//let div = document.getElementById("Game");
+//div.style.backgroundColor = "yellow"
+//console.log(div);
+//console.dir(div);
+
+//let button = document.getElementsByTagName("button")[0];
+//button.addEventListener("click",function(){
+//  console.log("work");
+//})
+
+function change(){
+    //console.log("work");
+    let div = document.getElementById("Game");
+    div.style.backgroundColor = "yellow"
+}
