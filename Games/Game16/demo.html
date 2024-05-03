@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id = "questions">
+       
+    </div>
+
+    <script>
+
+        let q1 = {
+            question: "What is 10 / 2 ?",
+            answers: {
+                a: '3',
+                b: '5',
+                c: '115'
+            },
+            correctAnswer: 'b'
+        }
+
+        let q2 = {
+            question: "What is 10 % 2 ?",
+            answers: {
+                a: '0',
+                b: '5',
+                c: '2'
+            },
+            correctAnswer: 'b'
+        }
+
+        let q3 = {
+            question: "What is 20 % 5 ?",
+            answers: {
+                a: '4',
+                b: '0',
+                c: 'Error'
+            },
+            correctAnswer: 'b'
+        }
+
+        
+        let myQuestions = [
+             q1, 
+             q2,
+             q3,     
+        ];
+
+        //console.log(myQuestions);
+
+        
+        let q = Math.floor(Math.random() * 3);
+
+        let p = document.createElement('p');
+        p.textContent = myQuestions[q].question
+        
+        let answers = myQuestions[q].answers
+       
+
+        let ul = document.createElement('ul')
+        
+        let liA = document.createElement('li')
+        liA.textContent = answers.a;
+
+        let liB = document.createElement('li')
+        liB.textContent = answers.b;
+
+        let liC = document.createElement('li')
+        liC.textContent = answers.c;
+
+        ul.appendChild(liA)
+        ul.appendChild(liB)
+        ul.appendChild(liC)
+
+    
+        let div = document.getElementById('questions')
+        div.appendChild(p);
+        div.appendChild(ul);
+        
+        
+    </script>
+</body>
+</html>

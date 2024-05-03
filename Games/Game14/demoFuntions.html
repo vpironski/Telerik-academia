@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Demo</h1>
+    <p><span>Samo text</span></p>
+
+    <button>ChangeText</button>
+    <button>ChangeColor</button>
+
+    <script>
+        let buttons = document.getElementsByTagName('button')
+        let buttonChangeText = buttons[0]
+
+        buttonChangeText.addEventListener("click",changeText)
+       
+        function changeText(){
+            //console.log("work")
+            let paragrah = document.getElementsByTagName('p')[0]
+            //console.dir(paragrah.textContent);
+            paragrah.textContent = "New text"
+        }
+
+
+        /*
+        let buttonChangeColor = buttons[1]
+
+        buttonChangeColor.addEventListener("click",function(){
+            //console.log("work")
+            let paragrah = document.getElementsByTagName('p')[0]
+            //console.dir(paragrah.textContent);
+            paragrah.style.color = "red";
+            
+        })
+        console.log(buttonChangeText);
+        */
+    </script>
+</body>
+</html>

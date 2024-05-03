@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        /*
+        let n1 = 1;
+        let n2 = '1';
+        let n3 = "1";
+
+        console.log(typeof n1)
+        console.log(typeof n2)
+        console.log(typeof n3)
+
+         if(n1 == n2){
+              console.log("yes")
+         }else{
+             console.log("no")
+         }
+         */
+
+        console.log(sum(5,5))
+        sum2(50,24)
+        sum3(54,5,"mul")
+
+        function sum(a,b){
+            let sum = a + b
+            return sum
+        }
+
+        function sum2(a,b){
+            let sum = a + b
+            console.log(sum)
+        }
+
+        function sum3(a,b,op = "sum"){
+            if(op == "sum"){
+                let sum = a + b
+                console.log(sum)
+            }else if(op == "mul"){
+                let mul = a * b
+                console.log(mul)
+            }
+        }
+        
+    </script>
+</body>
+</html>

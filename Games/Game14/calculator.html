@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Calculator</p>
+    <input type="text" id ="n1"> + 
+    <input type="text" id ="n2"> = 
+    <input type="text" id ="result" disabled="disabled" > 
+    <button onclick="calc()">Calc</button>
+
+
+    <script>
+        function calc(){
+            //console.log("work")
+            let n1 = Number(document.getElementById("n1").value)
+            let n2 = Number(document.getElementById("n2").value)
+
+            //n1 = Number(n1);
+            //n2 = Number(n2);
+            //console.log(typeof n1);
+
+            let sum = n1 + n2;
+            let resultInputField = document.getElementById("result")
+            resultInputField.value = sum
+            //console.log(resultInputField);
+            //console.log(sum);
+        }
+    </script>
+</body>
+</html>
